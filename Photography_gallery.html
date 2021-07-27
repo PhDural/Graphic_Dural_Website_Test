@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+   <head> 
+    <link href="CSS/gallery.css" rel="stylesheet" type="text/css">
+    <meta name="viewport"content="width=device-width,initial-scale=1"/>
+</head>
+
+<body>
+    <style>
+        body {
+      width: auto; 
+       background: url("images/GD_2021_BG_Mirrored.png"
+       );
+     background-size: cover;
+           background-repeat: repeat-y;
+           background-position: center;
+    }
+
+  
+
+        </style>
+   
+ 
+  
+   <header id="navBar">
+    <div class ="navlogoSpace">
+      <div class="logoSpacing">
+    <div class="GraphicDuralLogo">
+    </div>
+      <a href="index.html">
+      <img width="85" height="85" src="images/GDuralLogo2020fullcolorOriginalSize.png">
+      </a>
+      </div>
+    </div>
+      <h1 class="logoheader"></h1>
+      <div class ="navhamburgerSpace"> 
+    <div class="hamburger">
+      <div class ="hamburgerbutton"></div>
+    </div>  
+    </div>
+    <div id="navigation">
+      <p class="navtext"><a href="about.html"
+      >ABOUT</a></p>
+
+      <p class="navtext"><a href="client_work.html"
+        >CLIENT WORK</a></p>
+
+      <p class="navtext"> <a href="gallery.html"
+      >ONLINE GALLERY</a></p>
+
+      <p class="navtext"> <a href="news&articles.html"
+        >NEWS & ARTICLES</a></p>
+
+      <p class="navtext"> <a href="ProfileSite_Contact.html"
+        >CONTACT</a></p>
+
+      
+     
+    </div>
+   
+ 
+</header>
+
+
+
+
+<div class="section">
+  <div class ="gridcontainer">
+   <div class ="boxsection" class="boxGrideArea">
+   
+  
+      <div><img class="thumbnail box1" src="./images/Lightboxtest/thumbnails/Gallerimage_Test_thumb.png"
+        onclick="openModal ();currentSlide(1)"></div>
+   
+
+  
+      <div><img class="thumbnail box2" src="./images/Lightboxtest/thumbnails/GoldSECHorizontal_thumb.png"
+        onclick="openModal ();currentSlide(2)"></div>
+    
+
+    
+<div><img class="thumbnail box3" src="./images/Lightboxtest/thumbnails/test2_thumb.png"
+  onclick="openModal ();currentSlide(3)"></div>
+
+   
+  </div>
+  </div>
+
+</div>
+
+<!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+     
+      <img  class = "imgbox1" src="images/Lightboxtest/Gallerimage_Test.png">
+       
+      <div class="caption-container">
+      <p id="caption">Title</p>
+     
+    </div>
+
+    </div>
+   
+    <div class="mySlides">
+     
+      <img class = "imgbox2" src="images/Lightboxtest/GoldSECHorizontal.png">
+
+
+
+      <div class="caption-container">
+        <p id="caption">Title2</p>
+       <!-- <p>work description</p> -->
+      </div>
+
+    </div>
+
+    <div class="mySlides">
+     
+      <img class = "imgbox3" src="images/Lightboxtest/test2.png">
+
+
+
+    <div class="caption-container">
+      <p id="caption">Title3</p>
+     
+    </div>
+    </div>
+
+ 
+
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <!-- Caption text -->
+  
+
+  
+
+
+  </div>
+</div>
+
+
+
+
+
+
+
+<div id="footer">
+
+<div class="footerRow">
+  <p id ="footercontenttext">GRAPHIC DURAL LLC. &copy; 2021</p>
+
+  <div class ="vline"></div>
+
+  <div class="footerlink"><a href="privacy.html"
+    ><p class ="footerlinktext">PRIVACY POLICY</a></p></div>
+
+  <div class ="vline"></div>
+
+ 
+  <div class="footerlink"><a href=""
+    ><p class ="footerlinktext">SUBSCRIBE TO OUR NEWSLETTER</a></p></div>
+
+</div>
+
+
+  <img class = "footerimage" src ="./images/footer.png">
+ 
+
+
+</div>
+
+
+
+
+
+
+
+
+
+  <script src="js/index.js"></script>
+   
+</body>
+
+    </html>

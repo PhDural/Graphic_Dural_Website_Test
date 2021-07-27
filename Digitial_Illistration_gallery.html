@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+   <head> 
+    <link href="CSS/Digitial_Illustraion_gallery.css" rel="stylesheet" type="text/css">
+    <meta name="viewport"content="width=device-width,initial-scale=1"/>
+</head>
+
+<body>
+    <style>
+        body {
+      width: auto; 
+       background: url("images/GD_2021_BG_Mirrored.png"
+       );
+     background-size: cover;
+           background-repeat: repeat-y;
+           background-position: center;
+    }
+
+  
+
+        </style>
+   
+ 
+  
+   <header id="navBar">
+    <div class ="navlogoSpace">
+      <div class="logoSpacing">
+    <div class="GraphicDuralLogo">
+    </div>
+      <a href="index.html">
+      <img width="85" height="85" src="images/GDuralLogo2020fullcolorOriginalSize.png">
+      </a>
+      </div>
+    </div>
+      <h1 class="logoheader"></h1>
+      <div class ="navhamburgerSpace"> 
+    <div class="hamburger">
+      <div class ="hamburgerbutton"></div>
+    </div>  
+    </div>
+    <div id="navigation">
+
+      <p class="navtext"><a href="index.html"
+        >HOME</a></p>
+
+
+      <p class="navtext"><a href="about.html"
+      >ABOUT</a></p>
+
+      <p class="navtext"><a href="client_work.html"
+        >CLIENT WORK</a></p>
+
+      <p class="navtext"> <a href="gallery.html"
+      >ONLINE GALLERY</a></p>
+
+      <p class="navtext"> <a href="news&articles.html"
+        >NEWS & ARTICLES</a></p>
+
+      <p class="navtext"> <a href="ProfileSite_Contact.html"
+        >CONTACT</a></p>
+
+      
+     
+    </div>
+   
+ 
+</header>
+
+
+
+
+<div class="section">
+  <div class ="gridcontainer">
+   <div class ="boxsection" class="boxGrideArea">
+   
+  
+      <div><img class="thumbnail box1" src="images/Online_Gallery/Digitial_Illustration_Thumb/Big Ben_thumb.png"
+        onclick="openModal ();currentSlide(1)"></div>
+   
+
+  
+      <div><img class="thumbnail box2" src="images/Online_Gallery/Digitial_Illustration_Thumb/PineGroveIllustration_thumb.png"
+        onclick="openModal ();currentSlide(2)"></div>
+    
+
+    
+<div><img class="thumbnail box3" src="images/Online_Gallery/Digitial_Illustration_Thumb/PGHolidayCard_thumb.png"
+  onclick="openModal ();currentSlide(3)"></div>
+
+   
+  </div>
+  </div>
+
+</div>
+
+<!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+     
+      <img  class = "imgbox1" src="images/Online_Gallery/Digitial_Illustration/Big_Ben_Full.png">
+       
+      <div class="caption-container">
+      <p id="caption">Big Ben Illustration</p>
+     
+    </div>
+
+    </div>
+   
+    <div class="mySlides">
+     
+      <img class = "imgbox2" src="images/Online_Gallery/Digitial_Illustration/PineGroveIllustration_Full.png">
+
+
+
+      <div class="caption-container">
+        <p id="caption">Pine Grove Holdings Illustration</p>
+       <!-- <p>work description</p> -->
+      </div>
+
+    </div>
+
+    <div class="mySlides">
+     
+      <img class = "imgbox3" src="images/Online_Gallery/Digitial_Illustration/PGHolidayCard_Full.png">
+
+
+
+    <div class="caption-container">
+      <p id="caption">Pine Grove Holdings Holiday Card Illustration</p>
+     
+    </div>
+    </div>
+
+ 
+
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <!-- Caption text -->
+  
+
+  
+
+
+  </div>
+</div>
+
+
+
+
+
+
+<div class="sub_bg_modal" id="popup">
+  <div class="Sub_Modal">
+    <span class="close_BTN" onclick="closePopup()">&times;</span>
+    <h1 class="Sub_Title">Subscribe to Our Newsletter</h1>
+    <p>Enter your Email below</p>
+    <div class="Submit_Container">
+    <form action="subscribe.php" method="POST">
+      <input type="text" name="email" placeholder="Email">
+      
+    </form>
+     <button type="submit" class="Submit_BTN" name="submit">Subscribe</button>
+     </div>
+     <p>Thank You</p>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+<div id="footer">
+
+<div class="footerRow">
+  <p id ="footercontenttext">GRAPHIC DURAL LLC. &copy; 2021</p>
+
+  <div class ="vline"></div>
+
+  <div class="footerlink"><a href="privacy.html"
+    ><p class ="footerlinktext">PRIVACY POLICY</a></p></div>
+
+  <div class ="vline"></div>
+
+ 
+  <div class="Subscribe_BTN" onclick="togglePopup()">
+    <p class ="footerlinktext">SUBSCRIBE TO OUR NEWSLETTER</p>
+  </div>
+
+</div>
+
+
+  <img class = "footerimage" src ="images/footer.png">
+ 
+
+
+</div>
+
+
+
+
+
+
+
+
+
+  <script src="js/index.js"></script>
+   
+</body>
+
+    </html>

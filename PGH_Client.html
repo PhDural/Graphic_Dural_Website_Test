@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+   <head> 
+    <link href="CSS/PGH_Client.css" rel="stylesheet" type="text/css">
+    <meta name="viewport"content="width=device-width,initial-scale=1"/>
+</head>
+
+<body>
+    <style>
+        body {
+      width: auto; 
+       background: url("images/GD_2021_BG_Mirrored.png"
+       );
+     background-size: cover;
+           background-repeat: repeat-y;
+           background-position: center;
+    }
+
+  
+
+        </style>
+   
+ 
+  
+   <header id="navBar">
+    <div class ="navlogoSpace">
+      <div class="logoSpacing">
+    <div class="GraphicDuralLogo">
+    </div>
+      <a href="index.html">
+      <img width="85" height="85" src="images/GDuralLogo2020fullcolorOriginalSize.png">
+      </a>
+      </div>
+    </div>
+      <h1 class="logoheader"></h1>
+      <div class ="navhamburgerSpace"> 
+    <div class="hamburger">
+      <div class ="hamburgerbutton"></div>
+    </div>  
+    </div>
+    <div id="navigation">
+
+      <p class="navtext"><a href="index.html"
+        >HOME</a></p>
+
+
+      <p class="navtext"><a href="about.html"
+      >ABOUT</a></p>
+
+      <p class="navtext"><a href="client_work.html"
+        >CLIENT WORK</a></p>
+
+      <p class="navtext"> <a href="gallery.html"
+      >ONLINE GALLERY</a></p>
+
+      <p class="navtext"> <a href="news&articles.html"
+        >NEWS & ARTICLES</a></p>
+
+      <p class="navtext"> <a href="ProfileSite_Contact.html"
+        >CONTACT</a></p>
+
+      
+     
+    </div>
+   
+ 
+</header>
+
+
+
+
+<div class="section">
+  <div class ="gridcontainer">
+   <div class ="boxsection" class="boxGrideArea">
+   
+  
+      <div><img class="thumbnail box1" src="images/Client_Work/Thumbnail/PGH_Thumbnail/PG_Mockup1_thumbnail.png"
+        onclick="openModal ();currentSlide(1)"></div>
+   
+
+  
+      <div><img class="thumbnail box2" src="images/Client_Work/Thumbnail/PGH_Thumbnail/PG_Mockup2_thumbnail.png"
+        onclick="openModal ();currentSlide(2)"></div>
+    
+
+    
+<div><img class="thumbnail box3" src="images/Client_Work/Thumbnail/PGH_Thumbnail/PG_Mockup3_thumbnail.png"
+  onclick="openModal ();currentSlide(3)"></div>
+
+
+
+
+  <div><img class="thumbnail box4" src="images/Client_Work/Thumbnail/PGH_Thumbnail/Allanimationsfilecompressed.gif"
+    onclick="openModal ();currentSlide(4)"></div>
+
+
+
+  <div><img class="thumbnail box5" src="images/Client_Work/Thumbnail/PGH_Thumbnail/AHF_AD_Proto_thumbnail.png"
+    onclick="openModal ();currentSlide(5)"></div>
+
+
+
+<div><img class="thumbnail box6" src="images/Client_Work/Thumbnail/PGH_Thumbnail/AHF_AD_Thumbnail.png"
+onclick="openModal ();currentSlide(6)"></div>
+
+
+<div><img class="thumbnail box7" src="images/Client_Work/Thumbnail/PGH_Thumbnail/AHF_Updated_thumbnail.png"
+  onclick="openModal ();currentSlide(7)"></div>
+
+
+
+<div><img class="thumbnail box8" src="images/Client_Work/Thumbnail/PGH_Thumbnail/AHF_Card_thumbnail.png"
+  onclick="openModal ();currentSlide(8)"></div>
+
+
+
+<div><img class="thumbnail box9" src="images/Client_Work/Thumbnail/PGH_Thumbnail/AHF_original_thumbnail.png"
+onclick="openModal ();currentSlide(9)"></div>
+ 
+
+
+<div><img class="thumbnail box10" src="images/Client_Work/Thumbnail/PGH_Thumbnail/AHF_Proto_thumbnail.png"
+  onclick="openModal ();currentSlide(10)"></div>
+
+
+
+<div><img class="thumbnail box11" src="images/Client_Work/Thumbnail/PGH_Thumbnail/PG_ZoomBG_nail.png"
+  onclick="openModal ();currentSlide(11)"></div>
+
+
+
+
+  </div>
+  </div>
+
+</div>
+
+<!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+     
+      <img  class = "imgbox1" src="images/Client_Work/Full_Image/PineGrove_Full/PG_Mockup1_Full.png">
+       
+      <div class="caption-container">
+      <p id="caption">Stylescape Mockup 1</p>
+     
+    </div>
+
+    </div>
+   
+    <div class="mySlides">
+     
+      <img class = "imgbox2" src="images/Client_Work/Full_Image/PineGrove_Full/PG_Mockup2_Full.png">
+
+
+
+      <div class="caption-container">
+        <p id="caption">Stylescape Mockup 2</p>
+       <!-- <p>work description</p> -->
+      </div>
+
+    </div>
+
+    <div class="mySlides">
+     
+      <img class = "imgbox3" src="images/Client_Work/Full_Image/PineGrove_Full/PG_Mockup3_Full.png">
+
+
+
+    <div class="caption-container">
+      <p id="caption">Stylescape Mockup 3</p>
+     
+    </div>
+    </div>
+
+ 
+
+
+
+
+
+    <div class="mySlides">
+     
+      <img  class = "imgbox4" src="images/Client_Work/Full_Image/PineGrove_Full/HolidayCard_Full.gif" id="PGH_HolidayCard">
+       
+      <div class="caption-container">
+      <p id="caption">2020 Holiday Card Gif</p>
+     
+    </div>
+
+    </div>
+   
+    <div class="mySlides">
+     
+      <img class = "imgbox5" src="images/Client_Work/Full_Image/PineGrove_Full/AHF_AD_Proto_Full.png">
+
+
+
+      <div class="caption-container">
+        <p id="caption">2021 AHF Bio</p>
+       <!-- <p>work description</p> -->
+      </div>
+
+    </div>
+
+    <div class="mySlides">
+     
+      <img class = "imgbox6" src="images/Client_Work/Full_Image/PineGrove_Full/AHF_AD_Full.png">
+
+
+
+    <div class="caption-container">
+      <p id="caption">2021 Automotive Hall of Fame Ad</p>
+     
+    </div>
+    </div>
+
+ 
+    <div class="mySlides">
+     
+      <img  class = "imgbox7" src="images/Client_Work/Full_Image/PineGrove_Full/AHF_Updated_Full.png">
+       
+      <div class="caption-container">
+      <p id="caption">2021 Automotive Hall of Fame Plaque</p>
+     
+    </div>
+
+    </div>
+   
+    <div class="mySlides">
+     
+      <img class = "imgbox8" src="images/Client_Work/Full_Image/PineGrove_Full/AHF_Card_Full.png">
+
+
+
+      <div class="caption-container">
+        <p id="caption">AHF Ad Variation</p>
+       <!-- <p>work description</p> -->
+      </div>
+
+    </div>
+
+    <div class="mySlides">
+     
+      <img class = "imgbox9" src="images/Client_Work/Full_Image/PineGrove_Full/AHF_original_Full.png">
+
+
+
+    <div class="caption-container">
+      <p id="caption">AHF Plaque Variation</p>
+     
+    </div>
+    </div>
+
+ 
+    <div class="mySlides">
+     
+      <img  class = "imgbox10" src="images/Client_Work/Full_Image/PineGrove_Full/AHF_Proto_Full.png">
+       
+      <div class="caption-container">
+      <p id="caption">AHF Plaque Mockup</p>
+     
+    </div>
+
+    </div>
+   
+    <div class="mySlides">
+     
+      <img class = "imgbox11" src="images/Client_Work/Full_Image/PineGrove_Full/PG_ZoomBG_Full.png">
+
+
+
+      <div class="caption-container">
+        <p id="caption">Background Graphic</p>
+       <!-- <p>work description</p> -->
+      </div>
+
+    </div>
+
+
+
+
+
+
+
+
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <!-- Caption text -->
+  
+
+  
+
+
+  </div>
+</div>
+
+
+
+<div class="sub_bg_modal" id="popup">
+  <div class="Sub_Modal">
+    <span class="close_BTN" onclick="closePopup()">&times;</span>
+    <h1 class="Sub_Title">Subscribe to Our Newsletter</h1>
+    <p>Enter your Email below</p>
+    <div class="Submit_Container">
+    <form action="subscribe.php" method="POST">
+      <input type="text" name="email" placeholder="Email">
+      
+    </form>
+     <button type="submit" class="Submit_BTN" name="submit">Subscribe</button>
+     </div>
+     <p>Thank You</p>
+  </div>
+</div>
+
+
+
+
+<div id="footer">
+
+<div class="footerRow">
+  <p id ="footercontenttext">GRAPHIC DURAL LLC. &copy; 2021</p>
+
+  <div class ="vline"></div>
+
+  <div class="footerlink"><a href="privacy.html"
+    ><p class ="footerlinktext">PRIVACY POLICY</a></p></div>
+
+  <div class ="vline"></div>
+
+ 
+  <div class="Subscribe_BTN" onclick="togglePopup()">
+    <p class ="footerlinktext">SUBSCRIBE TO OUR NEWSLETTER</p>
+  </div>
+  
+</div>
+
+
+  <img class = "footerimage" src ="images/footer.png">
+ 
+
+
+</div>
+
+
+
+
+
+
+
+
+
+  <script src="js/index.js"></script>
+   
+</body>
+
+    </html>
